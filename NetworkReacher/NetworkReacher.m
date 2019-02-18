@@ -22,7 +22,7 @@
     if (self = [super init])
     {
         _reachability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault,
-                                                            [hostName cStringUsingEncoding:kCFStringEncodingASCII]);
+                                                            [hostName cStringUsingEncoding:NSASCIIStringEncoding]);
     }
     
     return self;
